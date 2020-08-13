@@ -17,6 +17,8 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: normal;
+  margin: 15px;
+  padding: 0;
 }
 
 main {
@@ -29,12 +31,12 @@ h1, h4 {
 }
 
 h1 {
-  margin: 0 0 .3em;
+  margin: 0 0 45px;
   font-size: 3em;
 }
 
 h4 {
-  margin: .3em 0;
+  margin: 0 0 .3em;
   font-size: 1.5em;
 }
 
@@ -50,7 +52,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
-  margin-top: 2em;
+  margin-top: 50px;
 }
 
 @media (min-width: 500px) {
