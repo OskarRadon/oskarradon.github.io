@@ -30,12 +30,12 @@ h1, h4 {
 
 h1 {
   margin: 0 0 .3em;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h4 {
   margin: .3em 0;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h1, h4, a, a:visited, a:active, a:focus {
@@ -51,6 +51,15 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
   margin-top: 2em;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 4em;
+  }
+  h4 {
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 800px) {
