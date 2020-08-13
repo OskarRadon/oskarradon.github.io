@@ -25,6 +25,19 @@ body {
   padding: 0;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  color: #D0D0D0;
+}
+
+#marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--yellow);
+}
+
 main {
   height: auto;
 }
