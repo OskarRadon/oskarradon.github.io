@@ -9,10 +9,7 @@ html, body {
 
 body {
   font-family: "AlteHaasGrotesk", Helvetica, sans-serif;
-  background: url(/assets/img/bg.png) #181818;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
+  background: #181818;
   display: flex;
   align-items: center;
   justify-content: center;
