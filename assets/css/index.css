@@ -1,8 +1,9 @@
 :root {
   --red:    tomato;
   --blue:   dodgerblue;
-  --green:  greenyellow;
+  --green:  palegreen;
   --yellow: khaki;
+  --grey:   #D0D0D0;
 }
 
 @font-face {
@@ -17,42 +18,34 @@ html, body {
 body {
   font-family: "AlteHaasGrotesk", Helvetica, sans-serif;
   background: #181818;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: normal;
   margin: 15px;
   padding: 0;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  color: #D0D0D0;
-}
-
-#marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  color: var(--yellow);
 }
 
 main {
   height: auto;
 }
 
-h1, h4, a, a:visited {
+h1, h2, h4, a, a:visited {
   color: #D0D0D0;
 }
 
-h1, h4 {
+h1, h2, h4 {
   font-weight: normal;
 }
 
 h1 {
   margin: 0 0 25px;
   font-size: 3em;
+}
+
+#intro {
+  height: 100vh;
+  width: calc(100vw - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #intro a {
@@ -92,15 +85,15 @@ h4#amp, #front-end h4 {
   margin: 4px 4px 4px 0;
 }
 
-.red {
+.digi {
   background: var(--red);
 }
 
-.blue {
+.grfx {
   background: var(--blue);
 }
 
-.green {
+.dev {
   background: var(--green);
 }
 
@@ -115,20 +108,14 @@ h4#amp, #front-end h4 {
   margin-top: 40px;
 }
 
-@media (min-width: 400px) {
-  body {
-    margin:0;
-  }
-}
-
 @media (min-width: 500px) and (min-height: 500px) {
-  h1 {
+  #intro h1 {
     font-size: 4em;
   }
-  h4 {
+  #intro h4 {
     font-size: 2em;
   }
-  .dot {
+  #intro .dot {
     height: 15px;
     width: 15px;
     margin: 5px 5px 5px 0;
@@ -136,10 +123,10 @@ h4#amp, #front-end h4 {
 }
 
 @media (min-width: 800px) and (min-height: 500px) {
-  h1 {
+  #intro h1 {
     font-size: 6em;
   }
-  h4 {
+  #intro h4 {
     font-size: 3em;
   }
   #links {
@@ -148,9 +135,50 @@ h4#amp, #front-end h4 {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .dot {
+  #intro .dot {
     height: 20px;
     width: 20px;
     margin: 8px 8px 8px 0;
   }
+}
+
+#projects{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+.upper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--grey);
+  align-items: end;
+}
+
+.title {
+  grid-column: 1 / span 4;
+  padding-right: 10px;
+}
+
+.date {
+  color: #D0D0D0;
+  filter: brightness(50%);
+  justify-self: end;
+}
+
+.disciplines {
+  margin-bottom: 8px;
+  justify-self: end;
+}
+
+.disciplines .dot {
+  margin-left: 2px;
 }
