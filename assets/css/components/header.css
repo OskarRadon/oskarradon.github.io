@@ -21,12 +21,22 @@
   margin-bottom: 5px;
 }
 
-#education span {
+#education h1:first-of-type span {
+  display: none;
+}
+
+#education h1 span.indent {
   display: none;
 }
 
 #education #inner-title {
   display: none;
+}
+
+@media (min-width: 400px) {
+  #intro br {
+    display: block;
+  }
 }
 
 @media (min-width: 500px) {
@@ -39,7 +49,7 @@
     grid-gap: 52px;
   }
 
-  #education span, !#education span br {
+  #education h1:first-of-type span {
     display: inline;
   }
 }
@@ -64,15 +74,15 @@
     grid-gap: 30px;
   }
 
-  #education span.indent {
-    display: block;
-  }
-
   #edu-title {
     display: none;
   }
 
   #education #inner-title {
+    display: block;
+  }
+
+  #education h1 span.indent {
     display: block;
   }
 
@@ -98,4 +108,16 @@
 
 header a:hover {
   text-decoration: underline;
+}
+
+#info-toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* Helper class for info toggle button */
+
+.hidden {
+  visibility: hidden;
 }

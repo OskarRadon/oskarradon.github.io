@@ -10,7 +10,8 @@
   font-weight: bold;
 }
 
-h1 {
+h1,
+button {
   font-family: "AlteHaasGrotesk", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
