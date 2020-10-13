@@ -1,23 +1,50 @@
-header {
-  position: fixed;
-  color: var(--grey);
-  background: var(--bg);
+#education {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-gap: 52px;
+  width: 450px;
+  padding-top: 30px;
 }
 
-#marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  color: var(--yellow);
+#clients {
+  padding-top: 30px;
 }
 
+@media (min-width: 800px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
 
-header div {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  #clients {
+    padding-top: 0;
+  }
 }
 
-nav a:not(:last-of-type) {
-  margin-right: 10px;
+@media (min-width: 1200px) {
+  #education {
+    width: auto;
+    grid-gap: 30px;
+  }
+
+  #clients, #education {
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1500px) {
+  #education {
+    grid-gap: 60px;
+  }
+}
+
+header a:hover {
+  text-decoration: underline;
 }

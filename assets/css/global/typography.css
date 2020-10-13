@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "AlteHaasGrotesk";
+  src: url("/assets/fonts/AlteHaasGroteskRegular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AlteHaasGrotesk";
+  src: url("/assets/fonts/AlteHaasGroteskBold.otf") format("opentype");
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "AlteHaasGrotesk", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--grey);
+  font-weight: normal;
+  margin: -5px 0 0 0;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+}
+
+@media (min-width: 1500px) {
+  h1 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.1px;
+  }
+}
+
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
