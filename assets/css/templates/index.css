@@ -12,3 +12,35 @@ body {
   margin: 30px;
   padding: 0;
 }
+
+main, a, a img {
+  width: 100%
+}
+
+.info {
+  margin: 40px 0 10px;
+}
+
+@media (min-width: 800px) {
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info {
+    margin: 100px 0 10px;
+  }
+
+  main a img.poster {
+    max-width: 60%;
+  }
+}
+
+/* @media (min-width: 800px) {
+  main a h2 {
+    margin: 120px 0 30px;
+  }
+} */
