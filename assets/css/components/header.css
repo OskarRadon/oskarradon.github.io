@@ -1,3 +1,7 @@
+header {
+  margin-bottom: 60px;
+}
+
 #intro {
   max-width: 360px;
 }
@@ -107,6 +111,13 @@ header a:hover {
 }
 
 @media (min-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
   #intro {
     max-width: 583px;
   }
@@ -138,12 +149,6 @@ header a:hover {
 
   #info-toggle {
     top: 30px;
-  }
-
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
