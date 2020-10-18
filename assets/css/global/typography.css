@@ -10,6 +10,11 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Iosevka";
+  src: url("/assets/fonts/iosevka-regular.ttf") format("truetype");
+}
+
 h1,
 button {
   font-family: "AlteHaasGrotesk", Helvetica, sans-serif;
@@ -20,41 +25,58 @@ button {
   margin: -5px 0 0 0;
 }
 
+h2 {
+  /* font-family: "Iosevka", monospace; */
+  font-family: "AlteHaasGrotesk", Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--dark-grey);
+  font-weight: normal;
+  margin: 5px 0 0 0;
+}
+
 a {
   color: var(--grey);
   text-decoration: none;
 }
 
+h1 a {
+  font-weight: bold;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 550px) {
-  h1 {
+  h1, h2 {
     font-size: 20px;
     line-height: 22px;
   }
 }
 
 @media (min-width: 800px) {
-  h1 {
+  h1, h2 {
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 @media (min-width: 1200px) {
-  h1 {
+  h1, h2 {
     font-size: 20px;
     line-height: 22px;
   }
 }
 
 @media (min-width: 1500px) {
-  h1 {
+  h1, h2 {
     font-size: 26px;
     line-height: 30px;
   }
 }
 
 @media (min-width: 2000px) {
-  h1 {
+  h1, h2 {
     font-size: 30px;
     line-height: 37px;
   }
