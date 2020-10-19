@@ -1,0 +1,172 @@
+header {
+  margin-bottom: 60px;
+}
+
+#intro {
+  max-width: 360px;
+}
+
+#intro br {
+  display: none;
+}
+
+#education {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-gap: 20px;
+  max-width: 450px;
+}
+
+#clients, #edu-title {
+  padding-top: 30px;
+}
+
+#edu-title {
+  margin-bottom: 5px;
+}
+
+#education h1:first-of-type span {
+  display: none;
+}
+
+#education h1 span.indent {
+  display: none;
+}
+
+#education #inner-title {
+  display: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+#info-toggle {
+  position: absolute;
+  top: 195px;
+  right: 30px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 310px) {
+  #info-toggle {
+    top: 175px;
+  }
+}
+
+@media (min-width: 352px) {
+  #info-toggle {
+    top: 155px;
+  }
+}
+
+@media (min-width: 400px) {
+  #intro br {
+    display: block;
+  }
+}
+
+@media (min-width: 420px) {
+  #info-toggle {
+    top: 136px;
+  }
+}
+
+@media (min-width: 500px) {
+  #intro {
+    max-width: 450px;
+  }
+
+  #education {
+    max-width: 675px;
+    grid-gap: 52px;
+  }
+
+  #education h1:first-of-type span {
+    display: inline;
+  }
+}
+
+@media (min-width: 550px) {
+  #info-toggle {
+    top: 144px;
+  }
+}
+
+@media (min-width: 650px) {
+  #info-toggle {
+    top: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  #intro {
+    max-width: 680px;
+  }
+
+  #info-toggle {
+    top: 205px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
+  #intro {
+    max-width: 583px;
+  }
+
+  #intro br {
+    display: block;
+  }
+
+  #education {
+    width: auto;
+    grid-gap: 30px;
+  }
+
+  #edu-title {
+    display: none;
+  }
+
+  #education #inner-title {
+    display: block;
+  }
+
+  #education h1 span.indent {
+    display: block;
+  }
+
+  #clients, #education {
+    padding: 0;
+  }
+
+  #info-toggle {
+    top: 30px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #intro {
+    max-width: 693px;
+  }
+  #education {
+    grid-gap: 60px;
+  }
+}
+
+/* Helper class for info toggle button */
+
+.more {
+  visibility: hidden;
+}
+
+.showing {
+  visibility: visible;
+}
